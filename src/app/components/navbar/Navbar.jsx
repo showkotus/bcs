@@ -48,6 +48,7 @@ const Navbar = () => {
             height={45}
             alt="Bangla Channel Swimming"
             className="mt-5"
+            priority
           />
           <div className={`mt-5 `}>
             <ul className="flex gap-4 text-white font-semibold ">
@@ -77,10 +78,11 @@ const Navbar = () => {
           <Link href={"/"}>
             <Image
               src={logo}
-              width={80}
-              height={34}
+              width={{width:'auto'}}
+              height={{height:'auto'}}
               alt="Bangla Channel Swimming"
               className="mt-5"
+              priority
             />
           </Link>
           <div onClick={() => setMdNav(!mdNav)} className="mt-5">
