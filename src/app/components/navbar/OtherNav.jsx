@@ -66,8 +66,8 @@ const Navbar = () => {
           <Link href={"/"}>
             <Image
               src={logo}
-              width={{width:'auto'}}
-              height={{height: 'auto'}}
+              width={80}
+              height={34}
               alt="Bangla Channel Swimming"
               className="m-2"
               priority

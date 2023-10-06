@@ -78,11 +78,11 @@ const Navbar = () => {
           <Link href={"/"}>
             <Image
               src={logo}
-              width={{width:'auto'}}
-              height={{height:'auto'}}
+              width={80}
+              height={34}
               alt="Bangla Channel Swimming"
               className="mt-5"
-              priority
+              
             />
           </Link>
           <div onClick={() => setMdNav(!mdNav)} className="mt-5">
