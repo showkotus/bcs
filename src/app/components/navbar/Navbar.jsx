@@ -10,6 +10,7 @@ import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { useState } from "react";
 import "./Navbar.css";
+import NavLink from "./NavLink";
 
 const navList = [
   {
@@ -29,7 +30,7 @@ const navList = [
     title: "Log In",
   },
   {
-    path: "/Sign-up",
+    path: "/sign-up",
     title: "Sign Up",
   },
 ];
@@ -38,10 +39,10 @@ const Navbar = () => {
   const [mdNav, setMdNav] = useState(false);
 
   return (
-    <header>
+    <header className="fixed top-0 left-0 w-full">
       <Marque />
       <nav>
-        <div className="sm:flex absolute top-0 z-50 w-full  justify-between p-4 bg-transperent hidden  ">
+        <div className=" sm:flex absolute top-0 z-50 w-full  justify-between items-center p-4 bg-transperent hidden  ">
           <Image
             src={logo}
             width={115}
@@ -50,11 +51,13 @@ const Navbar = () => {
             className="mt-5"
             priority
           />
+           <div><p className="text-amber-500 text-2xl font-extrabold  ">Bangla Channel Swimming</p></div>
           <div className={`mt-5 `}>
             <ul className="flex gap-4 text-white font-semibold ">
               {navList.map(({ path, title }) => (
                 <li key={path}>
-                  <Link href={path}>{title}</Link>
+                  {/* <Link href={path}>{title}</Link> */}
+                  <NavLink href={path} ex={path=='/'} activeClassName='text-amber-500 underline'>{title}</NavLink>
                 </li>
               ))}
             </ul>

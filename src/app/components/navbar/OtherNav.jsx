@@ -10,6 +10,7 @@ import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { useState } from "react";
 import "./Navbar.css";
+import NavLink from "./NavLink";
 
 const navList = [
   {
@@ -38,7 +39,7 @@ const Navbar = () => {
   const [mdNav, setMdNav] = useState(false);
 
   return (
-    <header>
+    <header className="fixed top-0 left-0 w-full">
       <Marque />
       <nav>
         <div className="sm:flex  w-full  justify-between items-center p-1 bg-[#005b96] hidden  ">
@@ -50,11 +51,13 @@ const Navbar = () => {
             className=""
             priority
           />
+          <div><p className="text-amber-500 text-2xl font-extrabold  ">Bangla Channel Swimming</p></div>
           <div className={` `}>
             <ul className="flex gap-4 font-semibold text-white">
               {navList.map(({ path, title }) => (
                 <li key={path}>
-                  <Link href={path}>{title}</Link>
+                  {/* <Link href={path}>{title}</Link> */}
+                  <NavLink href={path} ex= {path=='/'} activeClassName='text-amber-500 underline' >{title}</NavLink>
                 </li>
               ))}
             </ul>
