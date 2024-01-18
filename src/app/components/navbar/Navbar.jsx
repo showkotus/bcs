@@ -39,7 +39,7 @@ const Navbar = () => {
   const [mdNav, setMdNav] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full">
+    <header className="fixed top-0 left-0 w-full z-10 ">
       <Marque />
       <nav>
         <div className=" sm:flex absolute top-0 z-50 w-full  justify-between items-center p-4 bg-transperent hidden  ">

@@ -11,7 +11,8 @@ const Hero = () => {
       <div className='relative'>
       <div  >
           <video
-            src="https://res.cloudinary.com/showkot/video/upload/v1696431921/640x248_1.03MB_fzqfgn.mp4"
+            // src="https://res.cloudinary.com/showkot/video/upload/v1696431921/640x248_1.03MB_fzqfgn.mp4"
+            src='https://res.cloudinary.com/showkot/video/upload/v1705512743/intro_jz7fm5.mp4'
             autoPlay
             loop
             muted
