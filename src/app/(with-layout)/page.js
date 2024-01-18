@@ -19,7 +19,8 @@ export default function Home() {
         style={{ width: "100%" }}
       ></Image> */}
       {/* <Hero /> */}
-     {/* <Navbar/> */}
+      {/* <Navbar/> */}
+      <h1>Home page</h1>
     </main>
   );
 }
